@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background:linear-gradient(-40deg,#088,#6495ed,#20b2aa,#008b8b,lightseagreen,#6495ed, #088);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#title{
+    text-decoration: none;
+    color: #333;
+}
+
+#title:hover {
+    color: #85d6e4;
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 91.3vh;
+}
+.eu{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 350px;
+    height: 280px;
+    position: relative;
+    margin-bottom: 90px;
+    background:linear-gradient(-85deg,#333,#444,#555,#666,#666,#555,#444,#333);
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 35px 75px #333;
+    transition: 1s;
+
+}
+.eu:hover{
+    height: 500px;
+}
+
+.eu .photo{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px #333;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.eu:hover .photo{
+    width: 250px;
+    height: 250px;
+}
+
+.eu  .photo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.eu .descript{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    width: 160px;
+    height: 60px;
+    color: #ccc;
+    font-size: 12px;
+    text-align: center;
+    text-shadow: 1px 1px 6px #999;
+    transition: 1s;
+    overflow: hidden;
+}
+.eu:hover .descript{
+    margin-top: 155px;
+    width: 200px;
+    height: 200px;
+    font-size: 16.5px;
+    
+}
+.eu:hover span{
+    margin-top: 155px;
+    width: 200px;
+    height: 200px;
+    font-size: 13px;
+}
+
+span{
+    font-size: 13px;
+    color: #aaa;
+    text-shadow: 1px 1px 6px #999;
+    transition: 2s;
+}
+
+.eu .link,.eu .link2,.follow, .project{
+    display: none;
+    
+    transition: 1s;
+    font-size: 16px;
+    
+}
+
+.eu:hover .link,.eu:hover .link2{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    margin-top: 350px;
+    margin-left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #666;
+    border-radius: 10px;
+    border: 1px solid #777;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.eu:hover .follow{
+    position: absolute;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 190px;
+    margin-top: 220px;
+}
+
+.eu:hover .project{
+    position: absolute;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+    margin-left: 180px;
+}
+
+.eu:hover .link2{
+    margin-right: 365px;
+}
+
+.follow, .project{
+    font-size: 16px;
+}
+
+.eu:hover a:hover{
+    background-color: #008b8b;
+}

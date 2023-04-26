@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ceu{   
+    height: 97vh;
+}
+
+.clouds{
+    display: none;
+    
+}
+
+#nuvem{
+    position: relative;
+    top: 65px;
+    width: 540px;
+    height: 240px;
+    animation: cloud 6s infinite linear;
+}
+
+@keyframes cloud{
+    from {
+        left:650px;
+    }
+
+    to {
+        left: -240%;
+    }
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-image: linear-gradient(0deg, #e2deda,#e2dad1,#e2dad1,#90c2d6  ,#7bbed8);
+}
+
+.logo {
+    width: 350px;
+    height: 70px;
+    -webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+    background: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 8px #000;
+}
+
+.logo h2{
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.none{
+    opacity: 0;
+}
+
+.play{
+    position: absolute;
+    top: 31%;
+    left: 44.9%;
+}
+
+.play h1{
+    color: #ccc;
+    text-shadow: 2px 2px 3px #000;
+    font-size: 52px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.play h1:hover{
+    color: #52c552;
+}
+
+.fundo{
+    width: 100%;
+    height: 39.9%;
+    background-image: linear-gradient(0deg, #46290e,#523011,#5e3611,#7e4e21  ,#0f0);
+    position: absolute;
+    border-top: 1.5px solid #000;
+    top: 60%;
+}
+
+.fireball{
+    position: absolute;
+    top: 47.5%;
+    animation: fire 900ms infinite linear;
+    display: none;
+}
+
+
+@keyframes fire{
+    from {
+        left:72%;
+    }
+
+    to {
+        left: -6%;
+    }
+}
+
+.fireball img{
+    height: 120px;
+    width: 90px;
+}
+
+.player{
+    position: absolute;
+    top: 450px;
+    left: -8%;
+}
+
+.player img{
+    
+    width: 420px;
+}
+
+.jump{
+    animation: jump 450ms ease-out;
+}
+
+@keyframes jump{
+    0%{
+        top: 47.7%;
+    }
+
+    40%{
+        top: 35.7%;
+    }
+
+    50%{
+        top: 35.7%;
+    }
+
+
+
+
+    100%{
+        top: 47.7%;
+    }
+}
+
+.cannon img{
+    width: 420px;
+    position: absolute;
+    top: 47.7%;
+    left: 77%;
+}
+
+
+.died {
+    position: absolute;
+    top: 27%;
+    left: 45%;
+    font-size: 22px;
+    color: #911515;
+    text-shadow: 2px 2px 3px #000;
+    display: none;
+}
+

@@ -1,0 +1,166 @@
+/* INICIAL*/
+
+body {
+    margin: 0;
+    background: linear-gradient(-95deg, #084177, #687466, #cd8d7d, #fbc490);
+    animation:  colors 10s ease infinite;
+    background-size: 300% 300%;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+
+} 
+
+@keyframes colors {
+    0% {
+        background-position:0% 50% ;
+    }
+
+    50% {
+        background-position:100% 50% ;
+    }
+
+    100%{
+        background-position:0% 50% ;
+    }
+
+}
+
+header a  {
+    margin-top: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    color: #307fa3;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #46a5d1;
+}
+
+footer {
+    margin-left: 75px ;
+    margin-right: 75px;
+    margin-bottom: 20px;
+}
+
+main{
+    font-size: 18px;
+    
+}
+
+h2 {
+    margin-top: 0   ;
+    display: flex;
+    justify-content: center;
+    
+}
+p {
+    font-size: 20px;
+} 
+
+strong {
+    margin: 10px;
+}
+
+
+
+#image {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image {
+    margin-top: 40px;
+    height: 380px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    box-shadow: 2px 4px 22px #000;
+    margin-bottom: 50px;
+}
+
+.image img {
+    border: 2px solid #000;
+    border-radius: 6px;
+    height: 350px;
+    width: 100%;
+}
+
+.bibliografia {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+
+
+.bibliografia p {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    
+    
+}
+
+.vida {
+    position: relative;
+    top: 70px;
+}
+
+.vida p {
+    position: relative;
+    top: 30px;
+    
+}
+
+#prison {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.prison,
+.prison2 {
+    margin: 45px;
+    margin-top: 40px;
+    height: 410px;
+    width: 249px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    box-shadow: 2px 4px 22px #000;
+}
+
+.prison img,
+.prison2 img {
+    border-radius: 6px;
+    height: 320px;
+    width: 100%;
+}
+
+
+#pessoal {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pessoal {
+    margin-top: 40px;
+    height: 400px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    box-shadow: 2px 4px 22px #000;
+}
+
+.pessoal img {
+    border: 2px solid #000;
+    border-radius: 6px;
+    height: 350px;
+}
